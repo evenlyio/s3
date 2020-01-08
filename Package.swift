@@ -9,7 +9,7 @@ let package = Package(
       .library(name: "S3", targets: ["S3"]),
   ],
   dependencies: [
-      .package(url: "https://github.com/evenlyio/aws-sdk-swift-core.git", .upToNextMinor(from: "4.0.0"))
+      .package(url: "https://github.com/evenlyio/aws-sdk-swift-core.git", .branch("develop"))
   ],
   targets: [
     .target(name: "S3", dependencies: ["AWSSDKSwiftCore", "S3Middleware"]),
